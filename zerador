@@ -1,0 +1,5 @@
+#!/bin/bash
+# zerador - diminui o número informado até chegar a zero
+# Autor: Thyago Vinicius Camilo Cunha
+
+echo "$(seq -s ' ' $1 -1 0)"

@@ -1,0 +1,6 @@
+#!/bin/bash
+# substring - verifica se a primeira string informada está contida na segunda
+# Autor: Thyago Vinicius Camilo Cunha
+
+$(echo $2 | grep -q $1) && echo "$1 está contida em $2"
+exit 0

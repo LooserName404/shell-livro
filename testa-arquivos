@@ -1,0 +1,16 @@
+#!/bin/bash
+# testa-arquivos - verifica se o arquivo informado existe, e se existe, diz se é um arquivo ou diretório
+# Autor: Thyago Vinicius Camilo Cunha
+
+# Solicita a entrada do usuário
+echo "Digite o arquivo: "
+read ARQUIVO
+
+# Verifica se o arquivo é um diretório
+test -d "$ARQUIVO" && echo "$ARQUIVO é um diretório" && exit
+
+# Verifica se o arquivo é um arquivo comum
+test -f "$ARQUIVO" && echo "$ARQUIVO é um arquivo" && exit
+
+# Se não for um diretório ou arquivo, informa que o arquivo não existe
+echo "O arquivo '$ARQUIVO' não foi encontrado"

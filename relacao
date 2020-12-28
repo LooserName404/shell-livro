@@ -1,0 +1,11 @@
+#!/bin/bash
+# relacao - Verifica qual a relação (maior que, igual a ou menor que) entre os argumentos informados
+# Autor: Thyago Vinicius Camilo Cunha
+
+# Verifica se algum dos argumentos é nulo
+test "$1" = "" || test "$2" = "" && echo "É necessário fornecer dois argumentos" && exit
+
+# Efetua os testes de relação
+test $1 -lt $2 && echo "$1 é menor que $2" && exit
+test $1 -eq $2 && echo "$1 é igual a $2" && exit
+echo "$1 é maior que $2"

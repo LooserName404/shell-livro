@@ -1,0 +1,5 @@
+#!/bin/bash
+# juntatudo - junta todos os argumentos sem espaçá-los
+# Autor: Thyago Vinicius Camilo Cunha
+
+echo $* | tr -d ' '
